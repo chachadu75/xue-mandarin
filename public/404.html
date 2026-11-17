@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xué 学</title>
+    <script>
+      // Adresse inconnue dans le site : on renvoie vers l'accueil de l'app (/<nom-du-dépôt>/)
+      var seg = location.pathname.split('/')[1]
+      location.replace(seg ? '/' + seg + '/' : '/')
+    </script>
+  </head>
+  <body></body>
+</html>
